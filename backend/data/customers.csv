@@ -1,0 +1,4 @@
+﻿customer_id,name,email,age
+1,Rajesh,rajesh@example.com,21
+2,Test User,invalid-email,25
+3,John,john@example.com,30  

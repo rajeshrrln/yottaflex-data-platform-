@@ -1,0 +1,55 @@
+
+{
+  "source": {
+    "path": "data/customers.csv",
+    "format": "csv"
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "customer_id",
+        "type": "integer",
+        "nullable": false
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "nullable": false
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "nullable": false
+      },
+      {
+        "name": "age",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "primary_keys": ["customer_id"]
+  },
+  "business_rules": [
+    {
+      "field": "email",
+      "type": "email",
+      "nullable": false
+    },
+    {
+      "field": "age",
+      "type": "range",
+      "min": 18,
+      "max": 100,
+      "nullable": true
+    }
+  ],
+  "transformation": {
+    "strip_whitespace": true
+  },
+  "target": {
+    "db_path": "data/yottaflex.db",
+    "table_name": "customers",
+    "load_mode": "upsert",
+    "primary_keys": ["customer_id"]
+  }
+}

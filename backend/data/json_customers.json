@@ -1,0 +1,21 @@
+
+[
+  {
+    "customer_id": 101,
+    "name": "Suresh",
+    "email": "suresh@example.com",
+    "age": 26
+  },
+  {
+    "customer_id": 102,
+    "name": "Priya",
+    "email": "priya@example.com",
+    "age": 24
+  },
+  {
+    "customer_id": 103,
+    "name": "Mahesh",
+    "email": "invalid-email",
+    "age": 29
+  }
+]
