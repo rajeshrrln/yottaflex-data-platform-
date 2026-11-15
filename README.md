@@ -208,6 +208,21 @@ cd backend
 
 python -m pytest -v
 ```
+### Automated Test Results
+
+The backend automated test suite was executed successfully using Pytest.
+
+- **Total tests passed:** 69
+- **Failed tests:** 0
+- **Test status:** All tests passed
+
+Command used:
+
+```bash
+python -m pytest -v
+```
+
+All 69 tests passed successfully, demonstrating the tested functionality of the backend components.
 
 ## Demonstrated Test Scenarios
 
